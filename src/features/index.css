@@ -1,1 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Lobster", sans-serif;
+  --breakpoint-laptop: 1440.9px;
+  --breakpoint-laptop-s: 1200.9px;
+  --breakpoint-tablet: 1000.9px;
+  --breakpoint-mobile: 768.9px;
+  --breakpoint-mobile-s: 550.9px;
+  --color-custom-grey-10: rgba(0, 0, 0, 0.1);
+  --color-custom-orange: #ff7426;
+}
+
+@layer base {
+  body {
+    @apply font-primary max-laptop:text-base text-lg font-normal;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-laptop:max-w-320 mx-auto w-full max-w-425 px-5;
+  }
+
+  .text-custom-4xl {
+    @apply max-laptop:text-2xl text-[32px];
+  }
+}
