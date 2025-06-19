@@ -28,4 +28,18 @@
   .text-custom-4xl {
     @apply max-laptop:text-2xl text-[32px];
   }
+
+  .animate-custom {
+    @apply relative duration-300 hover:scale-110;
+  }
+  .animate-custom::after {
+    @apply bg-custom-orange absolute -bottom-0.5 left-0 h-0.5 w-0 rounded-lg duration-300 content-[''];
+  }
+  .animate-custom:hover::after {
+    @apply w-full;
+  }
+
+  .overlay-custom{
+    @apply max-tablet:w-full max-tablet:bg-white max-tablet:flex max-tablet:flex-col max-tablet:justify-evenly max-tablet:fixed max-tablet:z-10 max-tablet:left-0 max-tablet:top-0 max-tablet:h-screen ;
+  }
 }

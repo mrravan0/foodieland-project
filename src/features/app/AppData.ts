@@ -30,4 +30,4 @@ export const layoutData: LayoutData[] = [
   },
 ];
 
-export type HeaderProps = { data: LayoutData[] };
+export type HeaderProps = { data: LayoutData[], property?: string };
