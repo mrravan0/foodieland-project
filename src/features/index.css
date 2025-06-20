@@ -11,7 +11,9 @@
   --breakpoint-mobile: 768.9px;
   --breakpoint-mobile-s: 550.9px;
   --color-custom-grey-10: rgba(0, 0, 0, 0.1);
+  --color-custom-grey-60: rgba(0, 0, 0, 0.6);
   --color-custom-orange: #ff7426;
+  --color-custom-blue: #e7fafe;
 }
 
 @layer base {
@@ -39,7 +41,7 @@
     @apply w-full;
   }
 
-  .overlay-custom{
-    @apply max-tablet:w-full max-tablet:bg-white max-tablet:flex max-tablet:flex-col max-tablet:justify-evenly max-tablet:fixed max-tablet:z-10 max-tablet:left-0 max-tablet:top-0 max-tablet:h-screen ;
+  .overlay-custom {
+    @apply max-tablet:w-full max-tablet:bg-white max-tablet:flex max-tablet:flex-col max-tablet:justify-evenly max-tablet:fixed max-tablet:z-10 max-tablet:left-0 max-tablet:top-0 max-tablet:h-screen;
   }
 }

@@ -3,9 +3,12 @@ import { Spin as Hamburger } from "hamburger-react";
 import { useState, type FC } from "react";
 import type { HeaderProps } from "../../../features/app/AppData";
 import { Link } from "react-router-dom";
+import useMediaQuery from "../../../hooks/UseMediaQuery";
 
 const Header: FC<HeaderProps> = ({ data }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const isMobile = useMediaQuery(1000, "max");
+  
   return (
     <header className="border-custom-grey-10 border-b border-solid py-10">
       <div className="container-custom flex items-center justify-between gap-x-2.5">
@@ -13,10 +16,19 @@ const Header: FC<HeaderProps> = ({ data }) => {
           <Link to="/">Foodieland</Link>
           <span className="text-custom-orange">.</span>
         </h1>
-        <HeaderOverlay
-          data={data}
-          property="max-tablet:hidden contents"
-        />
+        {isMobile ? (
+          isOpen && (
+            <HeaderOverlay
+              data={data}
+              property="overlay-custom min-tablet:hidden"
+            />
+          )
+        ) : (
+          <HeaderOverlay
+            data={data}
+            property="max-tablet:hidden contents"
+          />
+        )}
         <div className="min-tablet:hidden z-20">
           <Hamburger
             toggled={isOpen}
@@ -25,12 +37,6 @@ const Header: FC<HeaderProps> = ({ data }) => {
             label="Show menu"
           />
         </div>
-        {isOpen && (
-          <HeaderOverlay
-            data={data}
-            property="overlay-custom min-tablet:hidden"
-          />
-        )}
       </div>
     </header>
   );
