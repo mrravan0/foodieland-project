@@ -1,8 +1,13 @@
 import type { FC } from "react";
 import PlayButtonIcon from "../../../svg/PlayButtonIcon";
-import type { HomeHeroProps } from "../../../pages/home-page/HomeData";
+import type { HomeData, HomeInfo } from "../../../pages/home-page/HomeData";
 
-const HomeHeroOverlay: FC<HomeHeroProps> = ({ info }) => {
+type HomeHeroOverlayProps = {
+  data: HomeData & HomeInfo;
+  info: HomeInfo[];
+};
+
+const HomeHeroOverlay: FC<HomeHeroOverlayProps> = ({ data, info }) => {
   return (
     <div className="bg-custom-blue flex justify-between rounded-4xl">
       <div className="flex flex-col justify-between p-12.5">
@@ -26,13 +31,13 @@ const HomeHeroOverlay: FC<HomeHeroProps> = ({ info }) => {
           </div>
           <div className="text-custom-grey-60 flex items-center gap-x-4">
             {info?.map((item) => {
-              const Icon = item.Icon;
+              // const Icon = item.Icon;
               return (
                 <div
                   className="flex cursor-pointer items-center gap-x-2.5 rounded-4xl bg-[rgba(0,0,0,0.05)] px-4 py-2 duration-300 hover:scale-95"
                   key={item.id}
                 >
-                  <Icon />
+                  {/* <Icon /> */}
                   <p>{item.title}</p>
                 </div>
               );
