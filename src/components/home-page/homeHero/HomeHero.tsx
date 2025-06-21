@@ -1,27 +1,22 @@
-import type { HomeData, HomeInfo } from "../../../pages/home-page/HomeData";
 import { type FC } from "react";
+import type { HomeHeroProps } from "../../../pages/home-page/HomeTypes";
 import HomeHeroOverlay from "./HomeHeroOverlay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/bundle";
 
-type HomeHeroProps = {
-  data: (HomeData & HomeInfo)[];
-  info: HomeInfo[];
-};
-
 const HomeHero: FC<HomeHeroProps> = ({ data, info }) => {
   return (
-    <section className="pt-10 pb-40">
+    <section className="pt-10">
       <div className="container-custom">
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={40}
           slidesPerView={1}
           loop={true}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3000, reverseDirection: true }}
+          pagination={{ clickable: true, type: "custom" }}
+          autoplay={{ delay: 3000 }}
         >
           {data?.map((item) => (
             <SwiperSlide>

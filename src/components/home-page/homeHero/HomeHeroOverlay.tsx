@@ -1,11 +1,6 @@
 import type { FC } from "react";
 import PlayButtonIcon from "../../../svg/PlayButtonIcon";
-import type { HomeData, HomeInfo } from "../../../pages/home-page/HomeData";
-
-type HomeHeroOverlayProps = {
-  data: HomeData & HomeInfo;
-  info: HomeInfo[];
-};
+import type { HomeHeroOverlayProps } from "../../../pages/home-page/HomeTypes";
 
 const HomeHeroOverlay: FC<HomeHeroOverlayProps> = ({ data, info }) => {
   return (
@@ -20,24 +15,18 @@ const HomeHeroOverlay: FC<HomeHeroOverlayProps> = ({ data, info }) => {
             <p className="font-semibold">Hot Recipes</p>
           </div>
           <div className="flex flex-col gap-y-6.25">
-            <h1 className="text-[64px] font-semibold">
-              Spicy delicious chicken wings
-            </h1>
-            <p className="text-custom-grey-60">
-              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
-              minim
-            </p>
+            <h1 className="text-[64px] font-semibold">{data.title}</h1>
+            <p className="text-custom-grey-60">{data.description}</p>
           </div>
           <div className="text-custom-grey-60 flex items-center gap-x-4">
             {info?.map((item) => {
-              // const Icon = item.Icon;
+              const Icon = item.Icon!;
               return (
                 <div
                   className="flex cursor-pointer items-center gap-x-2.5 rounded-4xl bg-[rgba(0,0,0,0.05)] px-4 py-2 duration-300 hover:scale-95"
                   key={item.id}
                 >
-                  {/* <Icon /> */}
+                  <Icon />
                   <p>{item.title}</p>
                 </div>
               );
@@ -51,7 +40,7 @@ const HomeHeroOverlay: FC<HomeHeroOverlayProps> = ({ data, info }) => {
               alt=""
             />
             <div className="flex flex-col gap-y-2">
-              <p className="font-bold">John Smith</p>
+              <p className="font-bold">{data.userName}</p>
               <p>15 March 2022</p>
             </div>
           </div>

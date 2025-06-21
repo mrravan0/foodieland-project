@@ -1,19 +1,8 @@
 import ForkKnifeIcon from "../../svg/ForkKnifeIcon";
 import TimerIcon from "../../svg/TimerIcon";
-import type { ComponentType } from "react";
+import * as HomeTypes from "./HomeTypes";
 
-export interface HomeInfo {
-  title: string;
-  Icon?: ComponentType;
-  id: string;
-}
-
-export interface HomeData {
-  description: string;
-  userName?: string;
-}
-
-export const homeHeroInfo: HomeInfo[] = [
+export const homeHeroInfo: HomeTypes.HomeHeroInfo[] = [
   {
     title: "30 Minutes",
     Icon: TimerIcon,
@@ -26,7 +15,7 @@ export const homeHeroInfo: HomeInfo[] = [
   },
 ];
 
-export const homeHeroData: (HomeInfo & HomeData)[] = [
+export const homeHeroData: HomeTypes.HomeHeroData[] = [
   {
     title: "Spicy delicious chicken wings",
     description:
@@ -47,5 +36,50 @@ export const homeHeroData: (HomeInfo & HomeData)[] = [
       "Another Lorem,Just wanted to create another one, Lorem ipsum dolor sit amet, consectetuipisicing elit",
     userName: "Joseph Franklyn",
     id: "3",
+  },
+];
+
+export const homeCategories: HomeTypes.HomeCategories[] = [
+  {
+    title: "Breakfast",
+    linearGradient:
+      "linear-gradient(180deg,rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%)",
+    image: "/home-page/homeCategories/photo1.png",
+    id: "1",
+  },
+  {
+    title: "Vegan",
+    linearGradient:
+      "linear-gradient(180deg,rgba(108, 198, 63, 0) 0%, rgba(108, 198, 63, 0.1) 100%)",
+    image: "/home-page/homeCategories/photo2.png",
+    id: "2",
+  },
+  {
+    title: "Meat",
+    linearGradient:
+      "linear-gradient(180deg,rgba(204, 38, 27, 0) 0%, rgba(204, 38, 27, 0.1) 100%)",
+    image: "/home-page/homeCategories/photo3.png",
+    id: "3",
+  },
+  {
+    title: "Dessert",
+    linearGradient:
+      "linear-gradient(180deg,rgba(240, 158, 0, 0) 0%, rgba(240, 158, 0, 0.1) 100%)",
+    image: "/home-page/homeCategories/photo4.png",
+    id: "4",
+  },
+  {
+    title: "Lunch",
+    linearGradient:
+      "linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%)",
+    image: "/home-page/homeCategories/photo5.png",
+    id: "5",
+  },
+  {
+    title: "Chocolate",
+    linearGradient:
+      "linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%)",
+    image: "/home-page/homeCategories/photo6.png",
+    id: "6",
   },
 ];
