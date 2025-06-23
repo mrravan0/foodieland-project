@@ -16,7 +16,7 @@ const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
         <HeartIcon status={isLiked} />
       </div>
       <div
-        className="flex cursor-pointer flex-col gap-y-6 px-4 pt-4 pb-8"
+        className="flex cursor-pointer flex-col gap-y-6 px-4 pt-4 pb-8 rounded-4xl"
         style={{ background: data.linearGradient }}
       >
         <img
@@ -28,7 +28,7 @@ const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
           <h2 className="max-laptop:text-2xl text-3xl font-semibold">
             {data.title}
           </h2>
-          <div className="flex items-center gap-x-6">
+          <div className="flex items-center gap-x-6 font-light">
             <div className="flex items-center gap-x-2.5">
               <TimerIcon />
               <p>30 Minutes</p>

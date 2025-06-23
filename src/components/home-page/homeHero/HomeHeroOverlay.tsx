@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import PlayButtonIcon from "../../../svg/PlayButtonIcon";
-import type { HomeHeroOverlayProps } from "../../../pages/home-page/HomeTypes";
+import type { HomeHeroOverlayProps } from "../../../fake-data/home-data/HomeTypes";
 
 const HomeHeroOverlay: FC<HomeHeroOverlayProps> = ({ data, info }) => {
   return (

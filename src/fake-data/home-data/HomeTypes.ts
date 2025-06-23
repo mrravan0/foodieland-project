@@ -1,20 +1,20 @@
 import type { ComponentType } from "react";
 
-interface HomeBaseData {
+export type HomeBaseData = {
   title: string;
   id: string;
 }
 
-interface HomeWithIcon {
+export type HomeWithIcon = {
   Icon: ComponentType;
 }
 
-interface HomeWithMedia {
+export type HomeWithMedia = {
   linearGradient: string;
   image: string;
 }
 
-interface HomeWithDescription {
+export type HomeWithDescription = {
   description: string;
   userName?: string;
 }
@@ -34,3 +34,6 @@ export type HomeHeroProps = {
 export type HomeCategoriesProps = {
   data: HomeMedia[];
 };
+export type HomeRecipesProps = {
+  data: (HomeMedia & HomeWithDescription)[]
+}

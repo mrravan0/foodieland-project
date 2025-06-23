@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { HomeCategoriesProps } from "../../../pages/home-page/HomeTypes";
+import type { HomeCategoriesProps } from "../../fake-data/home-data/HomeTypes";
 
 const Categories: FC<HomeCategoriesProps> = ({ data }) => {
   return (

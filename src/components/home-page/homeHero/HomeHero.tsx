@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import type { HomeHeroProps } from "../../../pages/home-page/HomeTypes";
+import type { HomeHeroProps } from "../../../fake-data/home-data/HomeTypes";
 import HomeHeroOverlay from "./HomeHeroOverlay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";

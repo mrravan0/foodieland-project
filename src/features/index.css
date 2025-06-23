@@ -31,6 +31,10 @@
     @apply max-laptop:text-2xl text-[32px];
   }
 
+  .text-custom-5xl {
+    @apply max-laptop:text-5xl text-[64px];
+  }
+
   .animate-custom {
     @apply relative duration-300 hover:scale-110;
   }
