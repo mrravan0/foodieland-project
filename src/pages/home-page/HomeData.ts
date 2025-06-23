@@ -2,7 +2,7 @@ import ForkKnifeIcon from "../../svg/ForkKnifeIcon";
 import TimerIcon from "../../svg/TimerIcon";
 import * as HomeTypes from "./HomeTypes";
 
-export const homeHeroInfo: HomeTypes.HomeHeroInfo[] = [
+export const homeHeroInfo: HomeTypes.HomeInfo[] = [
   {
     title: "30 Minutes",
     Icon: TimerIcon,
@@ -15,7 +15,7 @@ export const homeHeroInfo: HomeTypes.HomeHeroInfo[] = [
   },
 ];
 
-export const homeHeroData: HomeTypes.HomeHeroData[] = [
+export const homeHeroData: HomeTypes.HomeDescription[] = [
   {
     title: "Spicy delicious chicken wings",
     description:
@@ -39,7 +39,7 @@ export const homeHeroData: HomeTypes.HomeHeroData[] = [
   },
 ];
 
-export const homeCategories: HomeTypes.HomeCategories[] = [
+export const homeCategories: HomeTypes.HomeMedia[] = [
   {
     title: "Breakfast",
     linearGradient:

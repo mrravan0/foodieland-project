@@ -19,18 +19,18 @@ interface HomeWithDescription {
   userName?: string;
 }
 
-export type HomeHeroInfo = HomeBaseData & HomeWithIcon;
-export type HomeHeroData = HomeBaseData & HomeWithDescription;
-export type HomeCategories = HomeBaseData & HomeWithMedia;
+export type HomeInfo = HomeBaseData & HomeWithIcon;
+export type HomeDescription = HomeBaseData & HomeWithDescription;
+export type HomeMedia = HomeBaseData & HomeWithMedia;
 
 export type HomeHeroOverlayProps = {
-  data: HomeHeroData;
-  info: HomeHeroInfo[];
+  data: HomeDescription;
+  info: HomeInfo[];
 };
 export type HomeHeroProps = {
-  data: HomeHeroData[];
-  info: HomeHeroInfo[];
+  data: HomeDescription[];
+  info: HomeInfo[];
 };
 export type HomeCategoriesProps = {
-  data: HomeCategories[];
+  data: HomeMedia[];
 };

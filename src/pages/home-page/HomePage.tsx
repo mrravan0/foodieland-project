@@ -1,7 +1,7 @@
 import { Fragment } from "react/jsx-runtime";
 import HomeHero from "../../components/home-page/homeHero/HomeHero";
 import * as HomeData from "./HomeData";
-import Categories from "../../components/home-page/categories/categories";
+import Categories from "../../components/home-page/categories/Categories";
 
 const HomePage = () => {
   return (
