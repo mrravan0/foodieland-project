@@ -30,7 +30,6 @@
   .text-custom-4xl {
     @apply max-laptop:text-2xl text-[32px];
   }
-
   .text-custom-5xl {
     @apply max-laptop:text-5xl text-[64px];
   }
@@ -47,5 +46,9 @@
 
   .overlay-custom {
     @apply max-tablet:w-full max-tablet:bg-white max-tablet:flex max-tablet:flex-col max-tablet:justify-evenly max-tablet:fixed max-tablet:z-10 max-tablet:left-0 max-tablet:top-0 max-tablet:h-screen;
+  }
+
+  .button-custom {
+    @apply flex w-full cursor-pointer items-center justify-center rounded-2xl bg-black py-5 font-semibold text-white duration-300 hover:scale-105;
   }
 }

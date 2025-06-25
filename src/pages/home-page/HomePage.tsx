@@ -3,6 +3,7 @@ import HomeHero from "../../components/home-page/homeHero/HomeHero";
 import * as HomeData from "../../fake-data/home-data/HomeData";
 import Categories from "../../components/home-page/Categories";
 import Recipes from "../../components/home-page/Recipes";
+import Chef from "../../components/home-page/Chef";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       />
       <Categories data={HomeData.homeCategoriesData} />
       <Recipes data={HomeData.homeRecipesData} />
+      <Chef />
     </Fragment>
   );
 };

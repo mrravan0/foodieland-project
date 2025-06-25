@@ -44,7 +44,7 @@ const HomeHeroOverlay: FC<HomeHeroOverlayProps> = ({ data, info }) => {
               <p>15 March 2022</p>
             </div>
           </div>
-          <button className="flex items-center justify-center gap-x-4 rounded-2xl bg-black px-9 py-4 font-semibold text-white">
+          <button className="button-custom max-laptop:max-w-50 max-w-66.5 gap-x-4">
             View Recipes
             <PlayButtonIcon />
           </button>
