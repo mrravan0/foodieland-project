@@ -16,7 +16,7 @@ const Recipes: FC<HomeRecipesProps> = ({ data }) => {
             minim
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-3 gap-10 max-tablet:grid-cols-2 max-mobile:grid-cols-1">
           {data?.map((item) => (
             <RecipeCard
               data={item}
