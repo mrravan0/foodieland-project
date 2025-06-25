@@ -16,7 +16,7 @@ const HomeHero: FC<HomeHeroProps> = ({ data, info }) => {
           slidesPerView={1}
           loop={true}
           pagination={{ clickable: true, type: "custom" }}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 3000,pauseOnMouseEnter: true, }}
         >
           {data?.map((item) => (
             <SwiperSlide>
