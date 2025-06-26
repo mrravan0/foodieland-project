@@ -159,3 +159,35 @@ export const homeRecipesData: (HomeTypes.HomeMedia &
     id: "9",
   },
 ];
+
+export const homeCheckOutData: (HomeTypes.HomeDescription &
+  HomeTypes.HomeWithMedia)[] = [
+  {
+    title: "craig_love",
+    description:
+      "The vegetables dishes need to have certain vitamin for those people",
+    image: "/home-page/homeCheckOut/photo3.png",
+    id: "1",
+  },
+  {
+    title: "result__12",
+    description:
+      "The vegetables dishes need to have certain vitamin for those people",
+    image: "/home-page/homeCheckOut/photo4.png",
+    id: "2",
+  },
+  {
+    title: "mr_elliot",
+    description:
+      "The vegetables dishes need to have certain vitamin for those people",
+    image: "/home-page/homeCheckOut/photo5.png",
+    id: "3",
+  },
+  {
+    title: "craig_love",
+    description:
+      "The vegetables dishes need to have certain vitamin for those people",
+    image: "/home-page/homeCheckOut/photo6.png",
+    id: "4",
+  },
+];
