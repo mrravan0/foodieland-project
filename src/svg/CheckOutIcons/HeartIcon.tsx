@@ -1,9 +1,9 @@
 const HeartIcon = () => {
   return (
     <svg
-      width="22"
-      height="22"
-      viewBox="0 0 20 17"
+      width="25"
+      height="25"
+      viewBox="0 0 20 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

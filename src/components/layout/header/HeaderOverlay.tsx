@@ -23,7 +23,7 @@ const HeaderOverlay: FC<HeaderProps> = ({ data, property }) => {
       <div className="max-tablet:justify-center flex items-center gap-x-10">
         <FacebookIcon />
         <TwitterIcon />
-        <InstagramIcon />
+        <InstagramIcon color="black" />
       </div>
     </div>
   );

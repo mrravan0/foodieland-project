@@ -8,8 +8,8 @@ import MessengerIcon from "../../../svg/CheckOutIcons/MessengerIcon";
 const CheckOutCard: FC<HomeCheckOutCardProps> = ({ data }) => {
   return (
     <div className="flex cursor-pointer flex-col gap-y-2.5 rounded-lg bg-white py-2.5 duration-300 hover:scale-95">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-x-2.5 pr-3 pl-2.5">
+      <div className="flex items-center justify-between pr-3 pl-2.5">
+        <div className="flex items-center gap-x-2.5">
           <img
             src="/home-page/homeCheckOut/photo1.png"
             alt=""
@@ -41,15 +41,15 @@ const CheckOutCard: FC<HomeCheckOutCardProps> = ({ data }) => {
         <div className="flex flex-col gap-y-1">
           <div className="flex items-center gap-x-1.25">
             <img
+              className="size-5"
               src="/home-page/homeCheckOut/photo2.png"
               alt=""
             />
-            <p>
+            <p className="grow text-sm">
               Liked by
               <span className="font-bold"> {data.title}</span>
               and
               <span className="font-bold">44,686</span>
-              <br /> others
             </p>
           </div>
           <p>
