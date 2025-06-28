@@ -32,7 +32,7 @@
     @apply max-laptop:text-2xl text-[32px];
   }
   .text-custom-5xl {
-    @apply max-laptop:text-5xl text-[64px];
+    @apply max-laptop:text-5xl max-mobile:text-4xl text-[64px];
   }
 
   .animate-custom {

@@ -6,17 +6,16 @@ import HeartIcon from "../../svg/HeartIcon";
 
 const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
   const [isLiked, setIsLiked] = useState(false);
-  console.log(data);
   return (
     <div className="relative">
       <div
-        className="absolute top-0 right-0 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white duration-300 hover:scale-105"
+        className="absolute top-6 right-6 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white duration-300 hover:scale-105"
         onClick={() => setIsLiked(!isLiked)}
       >
         <HeartIcon status={isLiked} />
       </div>
       <div
-        className="flex cursor-pointer flex-col gap-y-6 px-4 pt-4 pb-8 rounded-4xl h-full"
+        className="flex h-full cursor-pointer flex-col gap-y-6 rounded-4xl px-4 pt-4 pb-8"
         style={{ background: data?.linearGradient }}
       >
         <img
@@ -24,8 +23,8 @@ const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
           src={data.image}
           alt=""
         />
-        <div className="flex flex-col justify-between h-full gap-y-6">
-          <h2 className="max-laptop:text-2xl text-3xl font-semibold max-tablet:text-lg">
+        <div className="flex h-full flex-col justify-between gap-y-6">
+          <h2 className="max-tablet:text-lg text-2xl">
             {data.title}
           </h2>
           <div className="flex items-center gap-x-6 font-light">
