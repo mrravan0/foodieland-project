@@ -48,3 +48,7 @@ export type HomeCheckOutProps = {
 export type HomeCheckOutCardProps = {
   data: (HomeDescription & HomeWithMedia);
 };
+
+export type HomeDeliciousProps = {
+  data:(HomeDescription & HomeWithMedia)[]
+}

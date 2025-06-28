@@ -3,8 +3,8 @@ import type { FC } from "react";
 const Chef: FC = () => {
   return (
     <section className="pt-35 pb-40">
-      <div className="container-custom flex justify-between items-center gap-x-2.5 max-laptop:flex-col-reverse max-laptop:gap-y-6">
-        <div className="flex flex-col gap-y-17.5 max-laptop:items-center max-laptop:text-center">
+      <div className="container-custom max-tablet:flex-col-reverse max-laptop:gap-y-6 flex items-center justify-between gap-x-2.5">
+        <div className="max-laptop:items-center max-laptop:text-center flex flex-col gap-y-17.5">
           <div className="flex flex-col gap-y-6">
             <h1 className="text-custom-5xl">
               Everyone can be a
