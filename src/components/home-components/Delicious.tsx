@@ -20,7 +20,7 @@ const Delicious: FC<HomeDeliciousProps> = ({ data }) => {
           </p>
         </div>
         <div className="max-tablet:grid-cols-2 max-mobile:grid-cols-1 grid grid-cols-4 gap-3">
-          {data?.map((item) => <RecipeCard data={item} />)}
+          {data?.map((item) => <RecipeCard data={item} key={item.id} />)}
         </div>
       </div>
     </section>

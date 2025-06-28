@@ -1,11 +1,14 @@
-import type { FC } from "react";
+import { useRef, type FC } from "react";
 
 const Deliciousness: FC = () => {
+  const inputReF = useRef<HTMLInputElement | null>(null);
+
   return (
     <section>
       <div className="container-custom">
         <div className="bg-custom-blue flex items-end justify-between rounded-[60px]">
           <img
+            className="max-laptop-s:w-62.5"
             src="/layout/deliciousness/photo1.png"
             alt=""
           />
@@ -18,16 +21,23 @@ const Deliciousness: FC = () => {
                 ad minim
               </p>
             </div>
-            <div className="flex cursor-pointer items-center bg-white py-2.5 pr-2.5 pl-7.5">
+            <div
+              className="flex cursor-pointer items-center justify-between rounded-3xl bg-white py-2.5 pr-2.5 pl-7.5"
+              onClick={() => inputReF.current?.focus()}
+            >
               <input
-                className="outline-none"
+                className="h-full grow outline-none"
                 type="email"
                 placeholder="Your email address..."
+                ref={inputReF}
               />
-              <button className="button-custom py-40">Subscribe</button>
+              <button className="button-custom z-10 max-w-40 py-5">
+                Subscribe
+              </button>
             </div>
           </div>
           <img
+            className="max-laptop-s:w-62.5 max-tablet:w-50"
             src="/layout/deliciousness/photo2.png"
             alt=""
           />
