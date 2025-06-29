@@ -1,11 +1,11 @@
 import FacebookIcon from "../../../svg/FacebookIcon";
 import InstagramIcon from "../../../svg/InstagramIcon";
 import TwitterIcon from "../../../svg/TwitterIcon";
-import type { HeaderProps } from "../../../features/app/AppData";
+import type { LayoutProps } from "../../../features/app/AppData";
 import { Link } from "react-router-dom";
 import type { FC} from "react";
 
-const HeaderOverlay: FC<HeaderProps> = ({ data, property }) => {
+const HeaderOverlay: FC<LayoutProps> = ({ data, property }) => {
   return (
     <div className={property}>
       <nav>
@@ -15,7 +15,7 @@ const HeaderOverlay: FC<HeaderProps> = ({ data, property }) => {
               className="animate-custom"
               key={item.id}
             >
-              <Link to="/">{item.title}</Link>
+              <Link to={item.to}>{item.title}</Link>
             </li>
           ))}
         </ul>

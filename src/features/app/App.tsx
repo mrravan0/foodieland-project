@@ -4,6 +4,7 @@ import HomePage from "../../pages/home-page/HomePage";
 import Header from "../../components/layout/header/Header";
 import * as AppData from "./AppData";
 import Deliciousness from "../../components/layout/Deliciousness";
+import Footer from "../../components/layout/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </Routes>
       </main>
       <Deliciousness />
+      <Footer data={AppData.layoutData} />
     </Fragment>
   );
 }

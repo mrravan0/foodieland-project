@@ -6,9 +6,9 @@ const Deliciousness: FC = () => {
   return (
     <section>
       <div className="container-custom">
-        <div className="bg-custom-blue flex items-end justify-between rounded-[60px]">
+        <div className="bg-custom-blue flex items-end justify-between rounded-[60px] max-mobile:px-5">
           <img
-            className="max-laptop-s:w-62.5"
+            className="max-laptop-s:w-62.5 max-tablet:w-43 max-mobile:hidden"
             src="/layout/deliciousness/photo1.png"
             alt=""
           />
@@ -22,11 +22,11 @@ const Deliciousness: FC = () => {
               </p>
             </div>
             <div
-              className="flex cursor-pointer items-center justify-between rounded-3xl bg-white py-2.5 pr-2.5 pl-7.5"
+              className="flex cursor-pointer items-center justify-between rounded-3xl bg-white py-2.5 pr-2.5 pl-7.5 max-mobile-s:flex-col gap-y-10"
               onClick={() => inputReF.current?.focus()}
             >
               <input
-                className="h-full grow outline-none"
+                className="grow outline-none min-h-full w-full max-mobile-s:text-center"
                 type="email"
                 placeholder="Your email address..."
                 ref={inputReF}
@@ -37,7 +37,7 @@ const Deliciousness: FC = () => {
             </div>
           </div>
           <img
-            className="max-laptop-s:w-62.5 max-tablet:w-50"
+            className="max-laptop-s:w-62.5 max-tablet:w-43 max-mobile:hidden"
             src="/layout/deliciousness/photo2.png"
             alt=""
           />

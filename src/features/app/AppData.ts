@@ -1,6 +1,6 @@
 interface LayoutData {
   title: string;
-  to?: string;
+  to: string;
   id: string;
 }
 
@@ -22,12 +22,14 @@ export const layoutData: LayoutData[] = [
   },
   {
     title: "Contact",
+    to: "",
     id: "4",
   },
   {
     title: "About us",
+    to: "",
     id: "5",
   },
 ];
 
-export type HeaderProps = { data: LayoutData[]; property?: string };
+export type LayoutProps = { data: LayoutData[]; property?: string };
