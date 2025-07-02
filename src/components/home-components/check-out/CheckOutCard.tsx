@@ -1,9 +1,9 @@
 import type { FC } from "react";
-import HeartIcon from "../../../svg/CheckOutIcons/HeartIcon";
-import CommentIcon from "../../../svg/CheckOutIcons/CommentIcon";
-import SaveIcon from "../../../svg/CheckOutIcons/SaveIcon";
+import HeartIcon from "../../../svg/checkOutIcons/HeartIcon";
+import CommentIcon from "../../../svg/checkOutIcons/CommentIcon";
+import SaveIcon from "../../../svg/checkOutIcons/SaveIcon";
 import type { HomeCheckOutCardProps } from "../../../fake-data/home-data/HomeTypes";
-import MessengerIcon from "../../../svg/CheckOutIcons/MessengerIcon";
+import MessengerIcon from "../../../svg/checkOutIcons/MessengerIcon";
 
 const CheckOutCard: FC<HomeCheckOutCardProps> = ({ data }) => {
   return (

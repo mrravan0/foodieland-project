@@ -5,6 +5,7 @@ import Header from "../../components/layout/header/Header";
 import * as AppData from "./AppData";
 import Deliciousness from "../../components/layout/Deliciousness";
 import Footer from "../../components/layout/Footer";
+import DetailsPage from "../../pages/details-page/DetailsPage";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
           <Route
             path="/"
             element={<HomePage />}
+          />
+          <Route
+            path="details"
+            element={<DetailsPage />}
           />
         </Routes>
       </main>

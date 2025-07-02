@@ -28,13 +28,12 @@ const HomeHeroOverlay: FC<HomeHeroOverlayProps> = ({ data, info }) => {
             </div>
             <div className="text-custom-grey-60 flex items-center gap-x-4">
               {info?.map((item) => {
-                const Icon = item.Icon!;
                 return (
                   <div
                     className="flex cursor-pointer items-center gap-x-2.5 rounded-4xl bg-[rgba(0,0,0,0.05)] px-4 py-2 duration-300 hover:scale-95"
                     key={item.id}
                   >
-                    <Icon />
+                    <item.Icon />
                     <p>{item.title}</p>
                   </div>
                 );

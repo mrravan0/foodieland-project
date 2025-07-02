@@ -3,9 +3,15 @@ import TimerIcon from "../../svg/TimerIcon";
 import ForkKnifeIcon from "../../svg/ForkKnifeIcon";
 import type { RecipesCardProps } from "../../fake-data/layout-data/Layout";
 import HeartIcon from "../../svg/HeartIcon";
+import { useNavigate, type NavigateFunction } from "react-router-dom";
 
 const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
   const [isLiked, setIsLiked] = useState(false);
+  const navigate: NavigateFunction = useNavigate();
+  const handleClick = () => {
+    navigate("details", { state: data });
+  };
+
   return (
     <div className="relative">
       <div
@@ -17,6 +23,7 @@ const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
       <div
         className="flex h-full cursor-pointer flex-col gap-y-6 rounded-4xl px-4 pt-4 pb-8"
         style={{ background: data?.linearGradient }}
+        onClick={handleClick}
       >
         <img
           className="rounded-4xl"
@@ -24,9 +31,7 @@ const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
           alt=""
         />
         <div className="flex h-full flex-col justify-between gap-y-6">
-          <h2 className="max-tablet:text-lg text-2xl">
-            {data.title}
-          </h2>
+          <h2 className="max-tablet:text-lg text-2xl">{data.title}</h2>
           <div className="flex items-center gap-x-6 font-light">
             <div className="flex items-center gap-x-2.5">
               <TimerIcon />
