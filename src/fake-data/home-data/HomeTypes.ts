@@ -2,7 +2,7 @@ import type { ComponentType } from "react";
 
 export type HomeBaseData = {
   title: string;
-  id: string;
+  id: number;
 };
 
 export type HomeWithIcon = {

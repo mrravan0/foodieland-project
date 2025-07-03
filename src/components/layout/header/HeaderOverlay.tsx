@@ -3,9 +3,9 @@ import InstagramIcon from "../../../svg/InstagramIcon";
 import TwitterIcon from "../../../svg/TwitterIcon";
 import type { LayoutProps } from "../../../features/app/AppData";
 import { Link } from "react-router-dom";
-import type { FC} from "react";
+import type { FC } from "react";
 
-const HeaderOverlay: FC<LayoutProps> = ({ data, property }) => {
+const HeaderOverlay: FC<LayoutProps> = ({ data, property, isClicked }) => {
   return (
     <div className={property}>
       <nav>
@@ -15,7 +15,12 @@ const HeaderOverlay: FC<LayoutProps> = ({ data, property }) => {
               className="animate-custom"
               key={item.id}
             >
-              <Link to={item.to}>{item.title}</Link>
+              <Link
+                to={item.to}
+                onClick={() => isClicked(false)}
+              >
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>

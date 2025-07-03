@@ -8,6 +8,7 @@ export type DetailsBaseData = {
 
 export type DetailsWithIcon = {
   image: string | ComponentType;
+  linearGradient?: string;
 };
 
 export type DetailsHeroProps = {
@@ -17,4 +18,9 @@ export type DetailsHeroProps = {
 export type DetailsNutritionProps = {
   dataImage: string;
   data: DetailsBaseData[];
+};
+
+export type DetailsIngredientsProps = {
+  data: DetailsBaseData[];
+  sideInfo: (DetailsBaseData & DetailsWithIcon)[];
 };

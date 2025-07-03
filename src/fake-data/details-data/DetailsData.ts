@@ -34,3 +34,11 @@ export const detailsNutritionData: DetailsBaseData[] = [
   { title: "Protein", description: "7.9 g", id: 3 },
   { title: "Cholesterol", description: "37.4 mg", id: 4 },
 ];
+
+export const detailsIngredientsData: DetailsBaseData[] = [
+  { title: "Lorem ipsum dolor sit amet", id: 1 },
+  { title: "Lorem ipsum dolor sit amet", id: 2 },
+  { title: "Lorem ipsum dolor sit amet", id: 3 },
+  { title: "Lorem ipsum dolor sit amet", id: 4 },
+  { title: "Lorem ipsum dolor sit amet", id: 5 },
+];

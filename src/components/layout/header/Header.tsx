@@ -21,12 +21,14 @@ const Header: FC<LayoutProps> = ({ data }) => {
             <HeaderOverlay
               data={data}
               property="overlay-custom min-tablet:hidden"
+              isClicked={setIsOpen}
             />
           )
         ) : (
           <HeaderOverlay
             data={data}
             property="max-tablet:hidden contents"
+            isClicked={setIsOpen}
           />
         )}
         <div className="min-tablet:hidden z-20">

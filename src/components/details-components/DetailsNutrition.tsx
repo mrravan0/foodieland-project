@@ -1,7 +1,7 @@
-import type { FC } from "react";
+import { memo, type FC } from "react";
 import type { DetailsNutritionProps } from "../../fake-data/details-data/DetailsType";
 
-const DetailsNutrition: FC<DetailsNutritionProps> = ({ dataImage, data }) => {
+const DetailsNutrition: FC<DetailsNutritionProps> = memo(({ dataImage, data }) => {
   return (
     <div className="max-laptop-s:flex-col-reverse max-laptop-s:items-center max-laptop-s:gap-y-15 flex justify-between gap-x-10">
       <img
@@ -31,6 +31,6 @@ const DetailsNutrition: FC<DetailsNutritionProps> = ({ dataImage, data }) => {
       </div>
     </div>
   );
-};
+});
 
 export default DetailsNutrition;

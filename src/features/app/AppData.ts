@@ -1,3 +1,5 @@
+import type { Dispatch, SetStateAction } from "react";
+
 interface LayoutData {
   title: string;
   to: string;
@@ -32,4 +34,8 @@ export const layoutData: LayoutData[] = [
   },
 ];
 
-export type LayoutProps = { data: LayoutData[]; property?: string };
+export type LayoutProps = {
+  data: LayoutData[];
+  property?: string;
+  isClicked: Dispatch<SetStateAction<boolean>>;
+};
