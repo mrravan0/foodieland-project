@@ -31,7 +31,7 @@ const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
           alt=""
         />
         <div className="flex h-full flex-col justify-between gap-y-6">
-          <h2 className="max-tablet:text-lg text-2xl">{data.title}</h2>
+          <h2 className="max-laptop-s:text-lg text-2xl">{data.title}</h2>
           <div className="flex items-center gap-x-6 font-light">
             <div className="flex items-center gap-x-2.5">
               <TimerIcon />

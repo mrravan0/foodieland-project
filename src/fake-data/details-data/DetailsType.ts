@@ -24,3 +24,8 @@ export type DetailsIngredientsProps = {
   data: DetailsBaseData[];
   sideInfo: (DetailsBaseData & DetailsWithIcon)[];
 };
+
+export type DetailsIngredientsInfoProps = {
+  data: DetailsBaseData[];
+  features: { titleName: string; status: boolean };
+};
