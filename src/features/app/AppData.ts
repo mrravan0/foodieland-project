@@ -37,5 +37,5 @@ export const layoutData: LayoutData[] = [
 export type LayoutProps = {
   data: LayoutData[];
   property?: string;
-  isClicked: Dispatch<SetStateAction<boolean>>;
+  isClicked?: Dispatch<SetStateAction<boolean>>;
 };

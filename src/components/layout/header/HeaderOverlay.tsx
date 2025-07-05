@@ -17,7 +17,7 @@ const HeaderOverlay: FC<LayoutProps> = ({ data, property, isClicked }) => {
             >
               <Link
                 to={item.to}
-                onClick={() => isClicked(false)}
+                onClick={() => isClicked!(false)}
               >
                 {item.title}
               </Link>
