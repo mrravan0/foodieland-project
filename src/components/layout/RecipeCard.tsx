@@ -8,8 +8,17 @@ import { useNavigate, type NavigateFunction } from "react-router-dom";
 const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
   const [isLiked, setIsLiked] = useState(false);
   const navigate: NavigateFunction = useNavigate();
+
   const handleClick = () => {
-    navigate("details", { state: data });
+    const headerEl = document.getElementById("main-header");
+    if (headerEl) {
+      headerEl.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    setTimeout(() => {
+      navigate("/details", { state: data });
+    }, 50);
   };
 
   return (
@@ -27,7 +36,7 @@ const RecipeCard: FC<RecipesCardProps> = ({ data }) => {
       >
         <img
           className="rounded-4xl"
-          src={data.image}
+          src={data.image as string}
           alt=""
         />
         <div className="flex h-full flex-col justify-between gap-y-6">

@@ -1,5 +1,13 @@
-import type { HomeMedia, HomeWithDescription } from "../home-data/HomeTypes"
+import type { ComponentType } from "react";
+
+type LayoutBaseData = {
+  title: string;
+  description?: string;
+  id: number;
+  image: string | ComponentType;
+  linearGradient?: string;
+};
 
 export type RecipesCardProps = {
-  data: HomeMedia & HomeWithDescription;
-}
+  data: LayoutBaseData;
+};

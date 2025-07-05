@@ -10,7 +10,10 @@ const Header: FC<LayoutProps> = ({ data }) => {
   const isMobile = useMediaQuery(1000, "max");
 
   return (
-    <header className="border-custom-grey-10 border-b border-solid py-10">
+    <header
+      className="border-custom-grey-10 border-b border-solid py-10"
+      id="main-header"
+    >
       <div className="container-custom flex items-center justify-between gap-x-2.5">
         <h1 className="font-secondary text-custom-4xl">
           <Link to="/">Foodieland</Link>

@@ -1,10 +1,10 @@
 import { memo, type FC } from "react";
 import { useLocation } from "react-router-dom";
-import type { DetailsHeroProps } from "../../fake-data/details-data/DetailsType";
-import PrintIcon from "../../svg/detailsIcons/PrintIcon";
-import ShareIcon from "../../svg/detailsIcons/ShareIcon";
+import type { DetailsHeroProps } from "../../../fake-data/details-data/DetailsType";
+import PrintIcon from "../../../svg/detailsIcons/PrintIcon";
+import ShareIcon from "../../../svg/detailsIcons/ShareIcon";
 import DetailsNutrition from "./DetailsNutrition";
-import { detailsNutritionData } from "../../fake-data/details-data/DetailsData";
+import { detailsNutritionData } from "../../../fake-data/details-data/DetailsData";
 
 const DetailsHero: FC<DetailsHeroProps> = memo(({ data }) => {
   const location = useLocation();

@@ -1,9 +1,10 @@
 import { Fragment, type FC } from "react";
-import DetailsHero from "../../components/details-components/DetailsHero";
+import DetailsHero from "../../components/details-components/details/DetailsHero";
 import Ingredients from "../../components/details-components/Ingredients/Ingredients";
 import Directions from "../../components/details-components/Directions";
 import { homeRecipesData } from "../../fake-data/home-data/HomeData";
 import * as DetailsData from "../../fake-data/details-data/DetailsData";
+import DetailsRecipe from "../../components/details-components/DetailsRecipe";
 
 const DetailsPage: FC = () => {
   return (
@@ -14,6 +15,7 @@ const DetailsPage: FC = () => {
         sideInfo={homeRecipesData}
       />
       <Directions />
+      <DetailsRecipe data={DetailsData.detailsRecipeData} />
     </Fragment>
   );
 };

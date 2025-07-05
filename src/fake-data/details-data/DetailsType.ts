@@ -29,3 +29,7 @@ export type DetailsIngredientsInfoProps = {
   data: DetailsBaseData[];
   features: { titleName: string; status: boolean };
 };
+
+export type DetailsRecipeProps = {
+  data: (DetailsBaseData & DetailsWithIcon)[];
+};
