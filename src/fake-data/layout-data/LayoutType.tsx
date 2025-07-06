@@ -7,12 +7,6 @@ export type LayoutData = {
   id: string;
 };
 
-export type LayoutProps = {
-  data: LayoutData[];
-  property?: string;
-  isClicked?: Dispatch<SetStateAction<boolean>>;
-};
-
 type LayoutBaseData = {
   title: string;
   description?: string;
@@ -21,6 +15,22 @@ type LayoutBaseData = {
   linearGradient?: string;
 };
 
+type LayoutInfoData = {
+  date: string;
+  personImage: string;
+  personName: string;
+};
+
+export type LayoutProps = {
+  data: LayoutData[];
+  property?: string;
+  isClicked?: Dispatch<SetStateAction<boolean>>;
+};
+
 export type RecipesCardProps = {
   data: LayoutBaseData;
+};
+
+export type BlogCardProps = {
+  data: LayoutBaseData & LayoutInfoData;
 };

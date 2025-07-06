@@ -1,6 +1,7 @@
 import { useRef, type FC } from "react";
+import type { BlogListProps } from "../../fake-data/blog-data/BlogType";
 
-const BlogHero: FC = () => {
+const BlogHero: FC<BlogListProps> = ({data}) => {
   const inputRef = useRef<HTMLInputElement | null>(null);
   return (
     <section className="py-20">
