@@ -1,7 +1,7 @@
 import HeaderOverlay from "./HeaderOverlay";
 import { Spin as Hamburger } from "hamburger-react";
 import { useState, type FC } from "react";
-import type { LayoutProps } from "../../../features/app/AppData";
+import type { LayoutProps } from "../../../fake-data/layout-data/LayoutType";
 import { Link } from "react-router-dom";
 import useMediaQuery from "../../../hooks/UseMediaQuery";
 

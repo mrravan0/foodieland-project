@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { Link } from "react-router-dom";
-import type { LayoutProps } from "../../features/app/AppData";
+import type { LayoutProps } from "../../fake-data/layout-data/LayoutType";
 import TwitterIcon from "../../svg/TwitterIcon";
 import InstagramIcon from "../../svg/InstagramIcon";
 import FacebookIcon from "../../svg/FacebookIcon";

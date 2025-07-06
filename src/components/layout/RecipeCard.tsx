@@ -1,7 +1,7 @@
 import { useState, type FC } from "react";
 import TimerIcon from "../../svg/TimerIcon";
 import ForkKnifeIcon from "../../svg/ForkKnifeIcon";
-import type { RecipesCardProps } from "../../fake-data/layout-data/Layout";
+import type { RecipesCardProps } from "../../fake-data/layout-data/LayoutType";
 import HeartIcon from "../../svg/HeartIcon";
 import { useNavigate, type NavigateFunction } from "react-router-dom";
 

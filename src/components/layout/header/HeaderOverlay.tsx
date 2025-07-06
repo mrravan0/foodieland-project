@@ -1,7 +1,7 @@
 import FacebookIcon from "../../../svg/FacebookIcon";
 import InstagramIcon from "../../../svg/InstagramIcon";
 import TwitterIcon from "../../../svg/TwitterIcon";
-import type { LayoutProps } from "../../../features/app/AppData";
+import type { LayoutProps } from "../../../fake-data/layout-data/LayoutType";
 import { Link } from "react-router-dom";
 import type { FC } from "react";
 
