@@ -16,4 +16,5 @@ export type BlogInfoData = {
 
 export type BlogListProps = {
   data: (BlogBaseData & BlogInfoData)[];
+  sideInfo: BlogBaseData[];
 };

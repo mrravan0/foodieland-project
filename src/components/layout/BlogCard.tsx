@@ -3,12 +3,13 @@ import type { BlogCardProps } from "../../fake-data/layout-data/LayoutType";
 
 const BlogCard: FC<BlogCardProps> = ({ data }) => {
   return (
-    <div className="flex items-center justify-between gap-x-5">
+    <div className="max-mobile:flex-col max-mobile:text-center flex items-center justify-between gap-x-5">
       <img
+        className="rounded-3xl"
         src={data.image as string}
         alt=""
       />
-      <div className="flex flex-col gap-y-8">
+      <div className="max-mobile:items-center flex flex-col gap-y-8">
         <div className="flex flex-col gap-y-4">
           <h2 className="text-custom-4xl">{data.title}</h2>
           <p className="text-custom-grey-60">{data.description}</p>

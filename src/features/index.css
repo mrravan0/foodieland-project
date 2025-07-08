@@ -30,7 +30,7 @@
   }
 
   .text-custom-4xl {
-    @apply max-laptop:text-2xl text-[32px];
+    @apply max-laptop:text-2xl text-[30px];
   }
   .text-custom-5xl {
     @apply max-laptop:text-5xl max-mobile:text-4xl text-[64px];

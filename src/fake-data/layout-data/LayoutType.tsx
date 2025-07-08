@@ -31,6 +31,10 @@ export type RecipesCardProps = {
   data: LayoutBaseData;
 };
 
+export type ListCardProps = {
+  data: LayoutBaseData[];
+};
+
 export type BlogCardProps = {
   data: LayoutBaseData & LayoutInfoData;
 };
