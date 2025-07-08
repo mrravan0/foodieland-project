@@ -6,6 +6,7 @@ import Deliciousness from "../components/layout/Deliciousness";
 import Footer from "../components/layout/Footer";
 import DetailsPage from "../pages/DetailsPage";
 import BlogPage from "../pages/BlogPage";
+import PostPage from "../pages/PostPage";
 import * as LayoutData from "../fake-data/layout-data/LayoutData";
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
           <Route
             path="blog"
             element={<BlogPage />}
+          />
+          <Route
+            path="post"
+            element={<PostPage />}
           />
         </Routes>
       </main>
