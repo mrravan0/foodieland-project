@@ -1,9 +1,18 @@
 import type { FC } from "react";
 import type { BlogCardProps } from "../../fake-data/layout-data/LayoutType";
+import { useNavigate } from "react-router-dom";
 
 const BlogCard: FC<BlogCardProps> = ({ data }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/post", { state: data });
+  };
+
   return (
-    <div className="max-mobile:flex-col max-mobile:text-center flex items-center justify-between gap-x-5">
+    <div
+      className="max-mobile:flex-col max-mobile:text-center flex cursor-pointer items-center justify-between gap-x-5 duration-300 hover:scale-95"
+      onClick={handleClick}
+    >
       <img
         className="rounded-3xl"
         src={data.image as string}

@@ -14,7 +14,12 @@ const BlogList: FC<BlogListProps> = ({ data, sideInfo }) => {
       <div className="container-custom flex flex-col items-center gap-y-20">
         <div className="max-laptop-s:flex-col flex items-start justify-between gap-10">
           <div className="max-mobile:gap-y-20 flex w-full max-w-287.5 grow flex-col gap-y-9">
-            {data?.map((item) => <BlogCard data={item} key={item.id}/>)}
+            {data?.map((item) => (
+              <BlogCard
+                data={item}
+                key={item.id}
+              />
+            ))}
           </div>
           <div className="max-laptop-s:w-full flex flex-col gap-y-20">
             <ListCard data={sideInfo} />
@@ -35,7 +40,6 @@ const BlogList: FC<BlogListProps> = ({ data, sideInfo }) => {
             const isNumeric = !isNaN(Number(item));
             const screenRender =
               !isMobileScreen || (isNumeric && Number(item) < 4);
-
             return (
               screenRender && (
                 <li
