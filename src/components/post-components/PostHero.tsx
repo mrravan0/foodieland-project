@@ -4,8 +4,7 @@ import { useLocation } from "react-router-dom";
 const PostHero: FC = () => {
   const location = useLocation();
   const { state } = location;
-  console.log(state);
-
+  
   return (
     <section className="py-20">
       <div className="container-custom flex flex-col items-center gap-y-16">

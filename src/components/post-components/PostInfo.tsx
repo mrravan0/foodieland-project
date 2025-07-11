@@ -56,7 +56,25 @@ const PostInfo: FC<PostInfoProps> = ({ data }) => {
                     ),
                 )}
               </div>
-              {/* Here will be added new tags and info */}
+            </div>
+            <div className="max-laptop:text-4xl bg-[linear-gradient(90deg,rgba(0,0,0,0.1)_0%,rgba(0,0,0,0)_100%)] px-10 py-15 text-5xl max-mobile:text-xl">
+              <p>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur ac ultrices odio.”
+              </p>
+            </div>
+            <div className="flex flex-col gap-y-6">
+              <h1 className="text-custom-4xl font-semibold">
+                What is the biggest misconception that people have about being a
+                professional chef?
+              </h1>
+              <p className="text-custom-grey-60">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur ac ultrices odio. Nulla at congue diam, at dignissim
+                turpis. Ut vehicula sed velit a faucibus. In feugiat vestibulum
+                velit vel pulvinar. Fusce id mollis ex. Praesent feugiat
+                elementum ex ut suscipit.
+              </p>
             </div>
           </div>
         </div>

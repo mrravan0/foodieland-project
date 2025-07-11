@@ -42,30 +42,3 @@ export const detailsIngredientsData: DetailsBaseData[] = [
   { title: "Lorem ipsum dolor sit amet", id: 4 },
   { title: "Lorem ipsum dolor sit amet", id: 5 },
 ];
-
-export const detailsRecipeData: (DetailsBaseData & DetailsWithIcon)[] = [
-  {
-    title: "Mixed Tropical Fruit Salad with Superfood Boosts",
-    image: "/home-page/homeDelicious/photo1.png",
-    description: "Snack",
-    id: 1,
-  },
-  {
-    title: "Big and Juicy Wagyu Beef Cheeseburger",
-    image: "/home-page/homeDelicious/photo2.png",
-    description: "Healthy",
-    id: 2,
-  },
-  {
-    title: "Healthy Japanese Fried Rice with Asparagus",
-    image: "/home-page/homeDelicious/photo3.png",
-    description: "Western",
-    id: 3,
-  },
-  {
-    title: "Cauliflower Walnut Vegetarian Taco Meat",
-    image: "/home-page/homeDelicious/photo4.png",
-    description: "Eastern",
-    id: 4,
-  },
-];

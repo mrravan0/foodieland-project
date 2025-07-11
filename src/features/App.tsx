@@ -7,6 +7,7 @@ import Footer from "../components/layout/Footer";
 import DetailsPage from "../pages/DetailsPage";
 import BlogPage from "../pages/BlogPage";
 import PostPage from "../pages/PostPage";
+import ContactPage from "../pages/ContactPage";
 import * as LayoutData from "../fake-data/layout-data/LayoutData";
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
           <Route
             path="post"
             element={<PostPage />}
+          />
+          <Route
+            path="contact"
+            element={<ContactPage />}
           />
         </Routes>
       </main>

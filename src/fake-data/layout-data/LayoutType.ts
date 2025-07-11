@@ -7,7 +7,7 @@ export type LayoutData = {
   id: string;
 };
 
-type LayoutBaseData = {
+export type LayoutBaseData = {
   title: string;
   description?: string;
   id: number;
